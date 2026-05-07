@@ -1,23 +1,25 @@
 .post-list {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
 }
 
 .post-item {
-    background-color: #fff;
+  background-color: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   transition: box-shadow 0.2s;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .post-item:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(57, 41, 196, 0.684);
+  cursor: pointer;
 }
 
 .post-item h2 {
@@ -32,11 +34,17 @@
   color: #6b7280;
   line-height: 1.6;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .post-item-footer {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   margin-top: 1rem;
   padding-top: 0.75rem;
   border-top: 1px solid #f3f4f6;
@@ -49,6 +57,7 @@
   padding: 3px 10px;
   border-radius: 999px;
   font-weight: 500;
+  grid-column: 2;
 }
 
 .post-delete-btn:hover {

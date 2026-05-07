@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <NavBar setModalOpen={setModalOpen} />
       <PostLists posts={posts} />
-      {modalOpen && <Modal setModalOpen={setModalOpen} />}    
+      {modalOpen && <Modal setModalOpen={setModalOpen} setPosts={setPosts} posts={posts} />}    
     </div>
   );
 }
