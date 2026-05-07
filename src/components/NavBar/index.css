@@ -1,11 +1,11 @@
-nav {
+.nav-wrapper {
   background-color: #333;
   color: white;
   padding: 1rem;
   max-width: 100%;
 }
 
-.nav-container {
+.nav-wrapper .nav-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -13,11 +13,11 @@ nav {
   align-items: center;
 }
 
-.nav h1 {
+.nav-wrapper .nav-container h1 {
   margin: 0;
 }
 
-.nav-container ul {
+.nav-wrapper .nav-container ul {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -25,6 +25,11 @@ nav {
   padding: 0;
 }
 
-.nav-container ul li {
+.nav-wrapper .nav-container ul li {
   cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-wrapper .nav-container ul li:hover {
+  color: rgb(104, 104, 149);
 }
