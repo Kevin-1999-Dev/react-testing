@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 
+// hello
 export default function index({ posts, setPosts }) {
   let deletePost = (id) => {
     setPosts((prevState) => prevState.filter((post) => post.id !== id));
