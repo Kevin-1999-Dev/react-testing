@@ -9,9 +9,7 @@ export default function index({setModalOpen}) {
         <h1>Logo</h1>
         <ul>
           <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li onClick={() => setModalOpen(true)}>Sign In</li>
+          <li onClick={() => setModalOpen(true)}>Post Create</li>
         </ul>
       </div>
     </nav>
